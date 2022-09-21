@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "856245785308",
+    "project_id": "appbanhang-ec4e1",
+    "storage_bucket": "appbanhang-ec4e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856245785308:android:7ec1f1668cf24bb75a1a19",
+        "android_client_info": {
+          "package_name": "com.shopingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "856245785308-aee8dm03m4ag9ibufman747cd86du3al.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYqL3gZj6QKcWDPH3HGWbOwX8eKJxt868"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "856245785308-aee8dm03m4ag9ibufman747cd86du3al.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

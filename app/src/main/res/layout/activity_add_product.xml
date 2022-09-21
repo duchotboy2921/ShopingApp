@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddProductActivity">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/textview_productname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Tên sản phẩm"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_add_product_name"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/textview_productname" />
+
+            <TextView
+                android:id="@+id/textview_productcategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Loại"
+                android:textSize="18sp"
+                android:layout_below="@+id/textview_productname"/>
+
+            <Spinner
+                android:id="@+id/spinenr_category"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_productname"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/textview_productname" />
+
+            <TextView
+                android:id="@+id/textview_productquantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_productcategory"
+                android:layout_marginTop="40dp"
+                android:text="Số lượng"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_add_product_quantity"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_productcategory"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/textview_productname"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textview_productprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_productquantity"
+                android:layout_marginTop="40dp"
+                android:text="Giá sản phẩm"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_add_product_price"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_productquantity"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/textview_productname"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textview_productcity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_productprice"
+                android:layout_marginTop="40dp"
+                android:text="Địa chỉ"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edt_add_product_city"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_productprice"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/textview_productprice" />
+
+            <TextView
+                android:id="@+id/textview_productimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_productcity"
+                android:layout_marginTop="40dp"
+                android:text="Ảnh sản phẩm"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/img_add_product_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/textview_productimg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/add_image" />
+
+            <Button
+                android:id="@+id/btn_add_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_add_product_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="Thêm sản phẩm" />
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

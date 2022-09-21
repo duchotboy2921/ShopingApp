@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ShopingApp</string>
+    <string-array name="category">
+        <item>Thời trang</item>
+        <item>Đồ điện tử</item>
+        <item>Mỹ phẩm</item>
+        <item>Đồ ăn</item>
+    </string-array>
+</resources>
