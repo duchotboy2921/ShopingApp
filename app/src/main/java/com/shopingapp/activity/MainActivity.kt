@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
         var fragmentManager:FragmentManager = supportFragmentManager
         var fragmentTransaction = fragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.framelayout,fragment)
+        fragmentTransaction.addToBackStack(null)
         fragmentTransaction.commit()
     }
 }

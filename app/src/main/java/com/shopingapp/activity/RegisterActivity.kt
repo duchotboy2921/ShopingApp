@@ -23,7 +23,7 @@ class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
-        retunToLoginPage()
+        returnToLoginPage()
         registerAccount()
     }
 
@@ -61,26 +61,8 @@ class RegisterActivity : AppCompatActivity() {
 
     }
 
-//    private fun addUserToDocument(userName: String, password: String, userID:String) {
-//        val dp = Firebase.firestore
-//        val user = hashMapOf(
-//            "username" to userName,
-//            "password" to password,
-//            "productsInCart" to mutableListOf<Product>(),
-//            "purchasedProducts" to mutableListOf<Product>()
-//        )
-//        dp.collection("Users")
-//            .document(userID)
-//            .set(user)
-//            .addOnCompleteListener {
-//                Log.d("addUser","Add user success: "+ userName)
-//            }
-//            .addOnFailureListener{
-//                Log.d("addUser","Add user fail: "+it.message)
-//            }
-//    }
 
-    private fun retunToLoginPage() {
+    private fun returnToLoginPage() {
         btn_return_login_page.setOnClickListener {
             startActivity(Intent(this@RegisterActivity, LoginActivity::class.java))
             auth.signOut()

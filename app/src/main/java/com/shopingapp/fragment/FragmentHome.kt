@@ -3,6 +3,7 @@ package com.shopingapp.fragment
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -30,7 +31,7 @@ class FragmentHome( val context1:Context):Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_home,container,false)
-
+        Log.d("fragment","onCreateView")
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -127,4 +128,55 @@ class FragmentHome( val context1:Context):Fragment() {
         var anim = AnimationUtils.loadAnimation(context1,R.anim.viewflipper_anim)
         viewflipper.setInAnimation(anim)
     }
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        Log.d("fragment","onAttach")
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        Log.d("fragment","onCreate")
+    }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        Log.d("fragment","onActivityCreated")
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.d("fragment","onStart")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d("fragment","onResume")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d("fragment","onpause")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d("fragment","onStop")
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        Log.d("fragment","onDestroyView")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d("fragment","onDestroy")
+    }
+
+    override fun onDetach() {
+        super.onDetach()
+        Log.d("fragment","onDetach")
+    }
+
 }
